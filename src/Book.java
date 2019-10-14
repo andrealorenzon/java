@@ -48,7 +48,7 @@ public class Book {
         this.numberOfPages = numberOfPages;
     }
 
-    public String getInitials() {
+    String getInitials() {
         var initials = "";
         for (char l : author.toCharArray()) {
             if (isUpperCase(l)) {initials = initials + l;}
@@ -63,7 +63,7 @@ public class Book {
                 "\nPages : " + numberOfPages;
     }
 
-    public void show() {
+    void show() {
         System.out.println(
                 "Title : "+title  +
                 "\nAuthor : " + author+
@@ -71,6 +71,6 @@ public class Book {
         );
     }
 
-
+    public void randomMethod() {};
 
 }
